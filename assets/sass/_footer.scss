@@ -19,7 +19,15 @@
 					padding-top:35px; 
 			        padding-left:40px;
 			        padding-right:40px;   
-				    @media #{$md_device}{ 
+					@media #{$lg_device}{
+						max-width: 780px;
+						margin: 0 auto;
+					}
+					@media #{$md_device}{
+						max-width: 595px;
+						margin: 0 auto;
+					}
+				    @media #{$sm_device}{ 
 				        padding-left:16px;
 				        padding-right:16px;   
 				    } 
@@ -79,6 +87,14 @@
 	}
 }
 .footer-item{
+	@media #{$lg_device}{
+		max-width: 780px;
+		margin: 0 auto;
+	}
+	@media #{$md_device}{
+		max-width: 550px;
+		margin: 0 auto;
+	}
 	a{
 		&:hover{
 			font-weight: 700; 
@@ -172,6 +188,7 @@
 		    } 
 		}
 	}
+	
 }
 .accourdion-item.mb-40{
 	margin-bottom: 27px; 
