@@ -57,7 +57,7 @@
 		position: relative;
 		.plus-toggle{
 			position: absolute;
-			right:-1px;
+			right:-2px;
 			top:3px;    
 			@media #{$lg_device}{
 				right: -2px;

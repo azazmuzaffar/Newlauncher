@@ -1,30 +1,49 @@
 // Card Text slide
 const El = document.querySelectorAll(".text-slide-container");
+
+console.log(El.length);
 if(El.length){
   for (var i = 0; i < El.length; i++) {
     El[i].parentElement.classList.add(`text-slide-wrapper-${i}`);
 
-    new Swiper(`.text-slide-wrapper-${i} .text-slide-container`, {
-      loop: false,  
-      grabCursor: false, 
-      resistanceRatio : 0.5, 
-      scrollbar: { 
-        el: `.text-slide-wrapper-${i} .slide-scrollbar`,
-        hide: false,
-      },
-      on:{
-        slideChange:function(){ 
-          if(this.isBeginning){  
-            this.$el[0].parentElement.classList.add('disable-scrollbar');
-          }else{ 
-            this.$el[0].parentElement.classList.remove('disable-scrollbar');
+      new Swiper(`.text-slide-wrapper-${i} .text-slide-container`, {
+        loop: false,  
+        grabCursor: false, 
+        resistanceRatio : 0.5, 
+        scrollbar: { 
+          el: `.text-slide-wrapper-${i} .slide-scrollbar`,
+          hide: false,
+        },
+      
+        on:{
+          slideChange:function(){ 
+            if(this.isBeginning){  
+              this.$el[0].parentElement.classList.add('disable-scrollbar');
+            }else{ 
+              this.$el[0].parentElement.classList.remove('disable-scrollbar');
+            }
           }
         }
-      }
-    }); 
-
+      }); 
   }
-}
+} 
+
+/* var swiper = new Swiper('.text-slide-container', {
+  scrollbar: {
+    el: '.swiper-scrollbar',
+        draggable: true,
+  },
+});
+ */
+
+/* 
+$(document).ready(larg);
+$(window).resize(larg);
+ function larg(){
+    var clientWidth = document.getElementById('checkWidth').clientWidth ;
+    clientWidth = clientWidth - 50;
+    $(".slide-scrollbar").css("width", clientWidth);
+ } */
 
 
 function InitStoresSlide(){ 

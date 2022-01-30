@@ -1761,6 +1761,7 @@ p .custom-badge-group {
 
 .text-slide-wrapper .slide-scrollbar .swiper-scrollbar-drag {
   background-color: #743393;
+  max-width: 33.33%;
 }
 
 .text-slide-wrapper.disable-scrollbar .slide-scrollbar .swiper-scrollbar-drag {
@@ -2145,7 +2146,7 @@ p .custom-badge-group {
 
 .check-box-lists li .plus-toggle {
   position: absolute;
-  right: -1px;
+  right: -2px;
   top: 3px;
 }
 
