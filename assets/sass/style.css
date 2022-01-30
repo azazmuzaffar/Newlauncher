@@ -2585,7 +2585,8 @@ p .custom-badge-group {
     padding-bottom: 10px;
   }
   .all-filters-area .all-sort-fixd-wrap, .sort-fixd-wrap .all-sort-fixd-wrap {
-    padding-bottom: 20px;
+    height: 100%;
+    padding-bottom: 90px;
   }
   .all-filters-area .footer-btn, .sort-fixd-wrap .footer-btn {
     position: absolute;
@@ -2619,7 +2620,11 @@ p .custom-badge-group {
     overflow-y: auto;
     height: calc(100% - 143px);
     width: 100%;
-    padding-bottom: 02px;
+    padding-bottom: 10px;
+  }
+  .all-filters-area .all-sort-fixd-wrap, .sort-fixd-wrap .all-sort-fixd-wrap {
+    height: 100%;
+    padding-bottom: 90px;
   }
 }
 
