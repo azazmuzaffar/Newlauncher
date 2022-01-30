@@ -68,6 +68,12 @@
 		}
 	}
 }
+.needs-validation{
+	.error-message{
+		font-size: 12px; 
+		color: red;
+	}
+}
 .input_group{
 	position: relative;
 	display: flex;
@@ -79,6 +85,7 @@
 		display: block;
 		margin: 0 7px;
 	}
+
 }
 .input-style2{ 
 	position: relative;
@@ -106,6 +113,14 @@
 		@media #{$xl_device}{
 			background-color:#fff; 
 		}
+	}
+}
+.input-style2.error{ 
+	.placeholder_text{ 
+		color: red;
+	}
+	input{
+		border-color: red;
 	}
 }
 .select-with-radio{ 

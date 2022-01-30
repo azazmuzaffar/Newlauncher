@@ -2174,6 +2174,11 @@ p .custom-badge-group {
   display: none;
 }
 
+.needs-validation .error-message {
+  font-size: 12px;
+  color: red;
+}
+
 .input_group {
   position: relative;
   display: -webkit-box;
@@ -2223,6 +2228,14 @@ p .custom-badge-group {
   .input-style2.focused .placeholder_text {
     background-color: #fff;
   }
+}
+
+.input-style2.error .placeholder_text {
+  color: red;
+}
+
+.input-style2.error input {
+  border-color: red;
 }
 
 .select-with-radio {

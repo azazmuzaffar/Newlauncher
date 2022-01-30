@@ -428,3 +428,38 @@ $('#checkAllSecond').change(function() {
   else
     $(".cb-2").prop('checked', false);
 });
+
+
+// Min value cannot be greater then max
+
+$(document).ready(function () {
+  $('#min-bedroom').on('input', function () {
+     var min = document.getElementById('min-bedroom').value;
+     var max = document.getElementById('max-bedroom').value;
+     if(min > max){
+      $(".bedroom").addClass("error");
+      $("p").html("Min. bedroom can't more then max. bedroom");
+     }
+     else{
+      $(".bedroom").removeClass("error");
+      $("p").html("");
+     }
+  });
+
+});
+
+
+$(document).ready(function () {
+$('#max-bedroom').on('input', function () {
+  var min = document.getElementById('min-bedroom').value;
+  var max = document.getElementById('max-bedroom').value;
+  if(min > max){
+   $(".bedroom").addClass("error");
+   $("p").html("Min. bedroom can't more then max. bedroom");
+  }
+  else{
+   $(".bedroom").removeClass("error");
+   $("p").html("");
+  }
+});
+});
