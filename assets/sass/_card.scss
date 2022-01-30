@@ -85,6 +85,12 @@
 		background-color:transparent; 
 		border-top:none;  
 		padding:18px 20px; 
+		.thumbnail{
+			img{
+				border: 1px solid #E6E7EB; 
+				border-radius: 50%;
+			}
+		}
 		@media #{$sm_device}{   
 			padding:18px 12px; 
 		}

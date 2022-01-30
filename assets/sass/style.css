@@ -1560,6 +1560,11 @@ p .custom-badge-group {
   padding: 18px 20px;
 }
 
+.card-primary .card-footer .thumbnail img {
+  border: 1px solid #E6E7EB;
+  border-radius: 50%;
+}
+
 @media (max-width: 575.98px) {
   .card-primary .card-footer {
     padding: 18px 12px;
