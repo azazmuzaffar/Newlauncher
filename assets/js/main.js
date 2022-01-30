@@ -436,13 +436,15 @@ $(document).ready(function () {
   $('#min-bedroom').on('input', function () {
      var min = document.getElementById('min-bedroom').value;
      var max = document.getElementById('max-bedroom').value;
+     console.log(min);
+     console.log(max);
      if(min > max){
       $(".bedroom").addClass("error");
-      $("p").html("Min. bedroom can't more then max. bedroom");
+      $(".error-message").html("Min. bedroom can't more then max. bedroom");
      }
      else{
       $(".bedroom").removeClass("error");
-      $("p").html("");
+      $(".error-message").html("");
      }
   });
 
@@ -453,13 +455,15 @@ $(document).ready(function () {
 $('#max-bedroom').on('input', function () {
   var min = document.getElementById('min-bedroom').value;
   var max = document.getElementById('max-bedroom').value;
+  console.log(min);
+  console.log(max);
   if(min > max){
    $(".bedroom").addClass("error");
-   $("p").html("Min. bedroom can't more then max. bedroom");
+   $(".error-message").html("Min. bedroom can't more then max. bedroom");
   }
   else{
    $(".bedroom").removeClass("error");
-   $("p").html("");
+   $(".error-message").html("");
   }
 });
 });
