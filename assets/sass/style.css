@@ -1720,8 +1720,18 @@ p .custom-badge-group {
   color: #6B7380;
 }
 
+.com-avater-info {
+  min-width: 0;
+}
+
 .com-avater-info .thumbnail {
   margin-right: 8px;
+}
+
+.com-avater-info .text-info {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .com-avater-info .text-info .name {
@@ -1730,16 +1740,9 @@ p .custom-badge-group {
   line-height: 19px;
   margin-bottom: 3px;
   font-weight: 400;
-}
-
-@media only screen and (max-width: 390px) {
-  .com-avater-info .text-info .name {
-    display: block;
-    width: 140px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .com-avater-info .text-info p {

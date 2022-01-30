@@ -220,23 +220,23 @@
 
 
 .com-avater-info{
+	min-width: 0;
 	.thumbnail{
 		margin-right: 8px; 
 	}
 	.text-info{
+		white-space: nowrap; 
+		overflow: hidden; 
+		text-overflow: ellipsis;
 		.name{ 
 			color: #111828;
 			font-size: 14px;
 			line-height: 19px;
 			margin-bottom: 3px; 
 			font-weight: 400;
-			@media #{$xs_mobile}{   
-				display: block;
-				width: 140px;
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
-			}
+			white-space: nowrap; 
+			overflow: hidden; 
+			text-overflow: ellipsis;
 		}
 		p{
 			color: #6B7380;
