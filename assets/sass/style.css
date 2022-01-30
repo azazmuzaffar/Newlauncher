@@ -1735,7 +1735,7 @@ p .custom-badge-group {
 @media only screen and (max-width: 390px) {
   .com-avater-info .text-info .name {
     display: block;
-    width: 160px;
+    width: 140px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
