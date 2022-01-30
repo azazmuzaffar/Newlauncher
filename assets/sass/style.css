@@ -89,7 +89,7 @@ button, a {
 
 @media only screen and (max-width: 1400px) {
   .spacing_ {
-    padding-right: 10px;
+    padding-right: 12px;
   }
 }
 
@@ -2656,6 +2656,10 @@ p .custom-badge-group {
 
 .filter-input-show .icon-filter {
   margin-right: 10px;
+}
+
+.filter-btn-group-wrap {
+  margin-bottom: 15px;
 }
 
 .filter-btn-group-wrap .open-filter-area {
