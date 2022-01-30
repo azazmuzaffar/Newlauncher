@@ -1732,6 +1732,16 @@ p .custom-badge-group {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 390px) {
+  .com-avater-info .text-info .name {
+    display: block;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .com-avater-info .text-info p {
   color: #6B7380;
   font-size: 12px;

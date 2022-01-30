@@ -230,6 +230,13 @@
 			line-height: 19px;
 			margin-bottom: 3px; 
 			font-weight: 400;
+			@media #{$xs_mobile}{   
+				display: block;
+				width: 160px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
 		}
 		p{
 			color: #6B7380;
