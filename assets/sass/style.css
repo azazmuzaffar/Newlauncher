@@ -3220,21 +3220,7 @@ p .custom-badge-group {
   }
 }
 
-@media only screen and (max-width: 991.98px) and (max-width: 991.98px) {
-  .footer-area .container .main-row .footer-info-wrapper {
-    max-width: 780px;
-    margin: 0 auto;
-  }
-}
-
 @media only screen and (max-width: 991.98px) and (max-width: 767.98px) {
-  .footer-area .container .main-row .footer-info-wrapper {
-    max-width: 595px;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 991.98px) and (max-width: 575.98px) {
   .footer-area .container .main-row .footer-info-wrapper {
     padding-left: 16px;
     padding-right: 16px;
@@ -3300,20 +3286,6 @@ p .custom-badge-group {
 .footer-content a:hover {
   font-weight: 700;
   color: #fff;
-}
-
-@media only screen and (max-width: 991.98px) {
-  .footer-item {
-    max-width: 780px;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 767.98px) {
-  .footer-item {
-    max-width: 550px;
-    margin: 0 auto;
-  }
 }
 
 .footer-item a:hover {
