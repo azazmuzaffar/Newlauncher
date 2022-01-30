@@ -2614,6 +2614,15 @@ p .custom-badge-group {
   }
 }
 
+@media (max-width: 575.98px) {
+  .all-filters-area .all-filters-wrap, .all-filters-area .all-sort-fixd-wrap, .sort-fixd-wrap .all-filters-wrap, .sort-fixd-wrap .all-sort-fixd-wrap {
+    overflow-y: auto;
+    height: calc(100% - 143px);
+    width: 100%;
+    padding-bottom: 02px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .all-filters-area.open, .sort-fixd-wrap.open {
     -webkit-transform: translateX(0);

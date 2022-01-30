@@ -234,6 +234,16 @@
 		width: 100%; 
 	}
 }
+.all-filters-area,.sort-fixd-wrap{
+	@media #{$sm_device}{
+		.all-filters-wrap,.all-sort-fixd-wrap{
+			overflow-y: auto; 
+			height:calc(100% - 143px);
+			width: 100%;
+			padding-bottom: 02px;
+		}
+	}
+}
 .all-filters-area.open,.sort-fixd-wrap.open{
 	@media #{$xl_device}{
 		transform: translateX(0); 
