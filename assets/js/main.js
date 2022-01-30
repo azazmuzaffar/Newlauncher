@@ -115,6 +115,7 @@ function InitStoresSlide(){
       $('.all-filters-area').removeClass('open');
 
       $('.sort-fixd-wrap').removeClass('open'); 
+      $("body").css("overflow", "auto");
 
     });
   // HEADER SCRIPTS END
