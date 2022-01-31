@@ -3497,4 +3497,16 @@ p .custom-badge-group {
     display: none;
   }
 }
+
+@media only screen and (max-width: 991.98px) {
+  .accourdion-item.hide-this-md {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .accourdion-item.hide-this-md {
+    display: block;
+  }
+}
 /*# sourceMappingURL=style.css.map */

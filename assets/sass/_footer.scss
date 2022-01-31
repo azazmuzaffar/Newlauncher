@@ -193,6 +193,19 @@
 		}
 	}
 }
+
+.accourdion-item{
+	@media #{$lg_device}{ 
+		&.hide-this-md{
+			display: none;
+		}
+	}
+	@media #{$sm_device}{ 
+		&.hide-this-md{
+			display: block;
+		}
+	}
+}
 //styleName: Body / Large / Medium;
 
 
