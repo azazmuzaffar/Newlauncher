@@ -2852,6 +2852,8 @@ p .custom-badge-group {
   overflow: hidden;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
+  position: relative !important;
+  height: 100%;
 }
 
 .blog-card:hover {
@@ -2865,6 +2867,8 @@ p .custom-badge-group {
 
 .blog-card .blog-content {
   padding: 16px;
+  height: 100%;
+  padding-bottom: 53px;
 }
 
 .blog-card .blog-content .title {
@@ -2889,6 +2893,11 @@ p .custom-badge-group {
   line-height: 20px;
   color: #6B7380;
   margin-bottom: 12px;
+}
+
+.blog-card .blog-content .avater-sm-wrap {
+  position: absolute;
+  bottom: 16px;
 }
 
 .blog-card .blog-content .avater-sm-wrap .thumb {
