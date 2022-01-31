@@ -30,6 +30,16 @@
 			.badge{
 				position: absolute;
 				left: 12px; 
+				@media #{$xxl_device}{
+					&.hide-xl-xxl{
+						display: none;
+					}
+				}
+				@media #{$xl_device}{
+					&.hide-xl-xxl{
+						display: block;
+					}
+				}
 			}
 			.badge-primary{
 				top: 12px; 
@@ -215,10 +225,11 @@
 }
 .text-gray{
 	color: #6B7380; 
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
-
-
-
 .com-avater-info{
 	min-width: 0;
 	.thumbnail{
@@ -374,3 +385,13 @@
 	}
 }
 
+
+
+.hide-xl-xxl{
+	@media #{$xxl_device}{
+			display: none !important;
+	}
+	@media #{$xl_device}{
+			display: block !important;
+	}
+}
