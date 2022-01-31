@@ -3448,8 +3448,13 @@ p .custom-badge-group {
 
 @media only screen and (max-width: 991.98px) {
   .footer-item .footer-link ul li a {
-    color: #fff;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-item .footer-link ul li a {
+    font-size: #fff;
   }
 }
 

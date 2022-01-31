@@ -143,8 +143,10 @@
 					text-decoration: none;
 					color:rgba(255, 255, 255, 0.6); 
 					@media #{$lg_device}{ 
-						color: #fff; 
 						font-size: 14px; 
+					}
+					@media #{$sm_device}{ 
+						font-size: #fff; 
 					}
 					&:hover{
 						color: #fff; 
