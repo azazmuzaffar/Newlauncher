@@ -52,7 +52,7 @@
 		margin-bottom: 7px;
 	}
 	.mobile-logos{
-		@media #{$sm_device}{
+		@media #{$md_device}{
 	        max-width: 360px;
 			margin: 0 auto !important;
 	    } 

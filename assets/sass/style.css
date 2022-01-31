@@ -1986,7 +1986,7 @@ p .custom-badge-group {
   margin-bottom: 7px;
 }
 
-@media (max-width: 575.98px) {
+@media only screen and (max-width: 767.98px) {
   .social-proof-wrap .mobile-logos {
     max-width: 360px;
     margin: 0 auto !important;
