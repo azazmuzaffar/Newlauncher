@@ -72,12 +72,27 @@
 	    @media #{$md_device}{
 	        margin-bottom: 16px;   
 	    }
+		@media #{$xl_device}{ 
+	        text-align: center;
+	    }
 	}
 	.count-wrapper{ 
 		margin-bottom: 33px;
+		@media #{$xl_device}{ 
+			width: fit-content;
+	        margin: 0 auto;
+			margin-bottom: 33px;
+	    }
 		@media #{$md_device}{ 
 	        margin-bottom: 14px;   
 	    }
+		.text-md-center{
+			.num{
+				@media #{$md_device}{ 
+					text-align: center; 
+				}
+			}
+		}
 	}
 	.ornament{
 		position: absolute;
@@ -88,7 +103,14 @@
 			min-height: 420px; 
 		}
 	}
-
+	.mess-para{
+		width: 100%;
+		p{
+			@media #{$xl_device}{ 
+				text-align: center;
+			}
+		}
+	}
 }
 .hero-image-wrapper{
 text-align: center;
