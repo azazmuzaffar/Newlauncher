@@ -51,11 +51,13 @@
 		}
 	}
 	.copyright{
-		@media #{$md_device}{
+		@media #{$lg_device}{
 			border-top:1px solid #353B48;
 			padding-top: 20px; 
-			padding-bottom: 20px;
 			margin-top: 5px; 
+		}
+		@media #{$md_device}{
+			padding-bottom: 20px;
 		}
 		p{
 			font-size: 14px;

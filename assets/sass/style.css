@@ -3339,12 +3339,17 @@ p .custom-badge-group {
   }
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 991.98px) {
   .footer-content .copyright {
     border-top: 1px solid #353B48;
     padding-top: 20px;
-    padding-bottom: 20px;
     margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .footer-content .copyright {
+    padding-bottom: 20px;
   }
 }
 
