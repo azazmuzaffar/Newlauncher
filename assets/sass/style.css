@@ -3454,7 +3454,7 @@ p .custom-badge-group {
 
 @media (max-width: 575.98px) {
   .footer-item .footer-link ul li a {
-    font-size: #fff;
+    color: #fff;
   }
 }
 
