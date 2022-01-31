@@ -96,7 +96,6 @@
 				@media #{$md_device}{ 
 					text-align: center; 
 				}
-				
 			}
 		}
 
@@ -114,11 +113,24 @@
 	.mess-para{
 		width: 100%;
 		p{
+			&.after-md{
+				display: none;
+				font-size: 16px;
+				line-height: 22.4px;
+			}
 			@media #{$xl_device}{ 
 				text-align: center;
 			}
 			@media screen and (max-width: 1400px) and (min-width: 1200px) {
 				font-size: 14px; 
+			}
+			@media #{$md_device}{ 
+				&.before-md{
+					display: none;
+				}
+				&.after-md{
+					display: block;
+				}
 			}
 		}
 	}
