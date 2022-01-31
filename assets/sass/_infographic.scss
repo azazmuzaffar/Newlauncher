@@ -1,18 +1,9 @@
-.reduce-padd{
-	@media #{$xxl_device}{ 
-		padding: 0 !important;
-	}
-}
 .infographic-wrap{
 	position: relative; 
 	width: 353px; 
 	margin-right: 120px; 
-	@media #{$xxl_device}{ 
-		width: 320px; 
-	}
 	.layer-panel{
 		position: absolute !important;
-		
 	}
 	.p16-15{
 		padding:16px 15px; 
@@ -26,18 +17,10 @@
 	.layer-1{
 		top: 63px !important;
 		left: -137px !important;
-		@media #{$xxl_device}{ 
-			top: 53px !important;
-			left: -133px !important;
-		}
 	}.layer-2{ 
 		top: auto !important;
 		bottom: 47px !important;
 		left: -172px !important;
-		@media #{$xxl_device}{ 
-			top: auto !important;
-			left: -160px !important;
-		}
 	}.layer-3{ 
 		left: auto !important;
 		right: -139px !important;

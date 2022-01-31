@@ -2021,6 +2021,14 @@ p .custom-badge-group {
   }
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .hero-area .title-xl {
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 28px;
+  }
+}
+
 .hero-area .count-wrapper {
   margin-bottom: 33px;
 }
@@ -2070,28 +2078,22 @@ p .custom-badge-group {
   }
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .hero-area .mess-para p {
+    font-size: 14px;
+  }
+}
+
 .hero-image-wrapper {
   text-align: center;
   position: relative;
   left: 20px;
 }
 
-@media only screen and (max-width: 1400px) {
-  .reduce-padd {
-    padding: 0 !important;
-  }
-}
-
 .infographic-wrap {
   position: relative;
   width: 353px;
   margin-right: 120px;
-}
-
-@media only screen and (max-width: 1400px) {
-  .infographic-wrap {
-    width: 320px;
-  }
 }
 
 .infographic-wrap .layer-panel {
@@ -2115,24 +2117,10 @@ p .custom-badge-group {
   left: -137px !important;
 }
 
-@media only screen and (max-width: 1400px) {
-  .infographic-wrap .layer-1 {
-    top: 53px !important;
-    left: -133px !important;
-  }
-}
-
 .infographic-wrap .layer-2 {
   top: auto !important;
   bottom: 47px !important;
   left: -172px !important;
-}
-
-@media only screen and (max-width: 1400px) {
-  .infographic-wrap .layer-2 {
-    top: auto !important;
-    left: -160px !important;
-  }
 }
 
 .infographic-wrap .layer-3 {
