@@ -1,49 +1,44 @@
 // Card Text slide
+var swiperObj = [];
+var swiperPos = []
 const El = document.querySelectorAll(".text-slide-container");
-
-console.log(El.length);
 if(El.length){
   for (var i = 0; i < El.length; i++) {
     El[i].parentElement.classList.add(`text-slide-wrapper-${i}`);
 
-      new Swiper(`.text-slide-wrapper-${i} .text-slide-container`, {
-        loop: false,  
-        grabCursor: false, 
-        resistanceRatio : 0.5, 
-        scrollbar: { 
-          el: `.text-slide-wrapper-${i} .slide-scrollbar`,
-          hide: false,
-        },
-      
-        on:{
-          slideChange:function(){ 
-            if(this.isBeginning){  
-              this.$el[0].parentElement.classList.add('disable-scrollbar');
-            }else{ 
-              this.$el[0].parentElement.classList.remove('disable-scrollbar');
-            }
+    swiperPos[i] = 0;
+    swiperObj[i] = new Swiper(`.text-slide-wrapper-${i} .text-slide-container`, {
+      loop: false,  
+      grabCursor: false, 
+      resistanceRatio : 0.5, 
+      scrollbar: { 
+        el: `.text-slide-wrapper-${i} .slide-scrollbar`,
+        hide: false,
+      },
+      // observer:true,
+      // observeParents: true,
+      on:{
+        slideChange:function(e) { 
+          if(this.isBeginning){  
+            this.$el[0].parentElement.classList.add('disable-scrollbar');
+          }else{ 
+            this.$el[0].parentElement.classList.remove('disable-scrollbar');
           }
+          obj = $(e.$wrapperEl).parent().parent();
+          var classList = obj.attr('class').split(/\s+/);
+          idx = 0;
+          classList.forEach((c) => {
+            if (c.indexOf('text-slide-wrapper-') > -1) {
+              idx = c.replace('text-slide-wrapper-', '');
+            }
+          })
+          swiperPos[idx] = e.activeIndex;
         }
-      }); 
+      }
+    }); 
+
   }
-} 
-
-/* var swiper = new Swiper('.text-slide-container', {
-  scrollbar: {
-    el: '.swiper-scrollbar',
-        draggable: true,
-  },
-});
- */
-
-/* 
-$(document).ready(larg);
-$(window).resize(larg);
- function larg(){
-    var clientWidth = document.getElementById('checkWidth').clientWidth ;
-    clientWidth = clientWidth - 50;
-    $(".slide-scrollbar").css("width", clientWidth);
- } */
+}
 
 
 function InitStoresSlide(){ 
@@ -90,9 +85,31 @@ function InitStoresSlide(){
 } InitStoresSlide();
 
 
+function reLoadSwiper() {
+  setTimeout(() => {
+    for (var i = 0; i < El.length; i++) {
+      w = swiperObj[i].size;
+      c = $('.text-slide-wrapper-'+i+' .swiper-wrapper .swiper-slide').length;
+      dragObj = $('.text-slide-wrapper-'+i+' .swiper-scrollbar-drag');
+      dragObj.css('width', w/c+'px');
+      dragObj.css('transform', 'translate3d('+(w/c*swiperPos[i])+'px, 0px, 0px)');
+    }
+  }, 1000)
+}
+
 // Card Text slide End
 
 (function($) { 
+
+  var timer;
+  $(window).resize(function() {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      reLoadSwiper();
+    }, 300)
+  });
+
+
 
 
   $(".box-nc-scroll").niceScroll({
