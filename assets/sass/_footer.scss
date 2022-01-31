@@ -1,6 +1,6 @@
 .footer-area{
 	background: #111828;
-	@media #{$lg_device}{ 
+	@media #{$sm_device}{ 
 		padding-bottom: 0 !important;
 		padding-top: 0 !important;
 		.container{
@@ -90,7 +90,7 @@
 		line-height: 22px;
 		color: #fff;
 		margin-bottom: 20px;
-		@media #{$lg_device}{
+		@media #{$sm_device}{
 			position: relative;
 			cursor: pointer; 
 			margin-bottom: 0;
@@ -118,7 +118,7 @@
 			}
 		}
 	}
-	@media #{$lg_device}{
+	@media #{$sm_device}{
 		.footer-title.active{
 			&::before{
 				transform:scaleY(-1);
@@ -127,13 +127,13 @@
 	}
 	.footer-link{
 		ul{
-			@media #{$lg_device}{ 
+			@media #{$sm_device}{ 
 				padding-top: 0px;
 				padding-bottom: 6px; 
 			}
 			li{
 				margin-bottom: 12px;
-				@media #{$lg_device}{ 
+				@media #{$sm_device}{ 
 					margin-bottom: 15px;
 				}
 				a{
@@ -163,7 +163,7 @@
 		}
 	}
 	.footer-link,.footer-title{
-		@media #{$lg_device}{ 
+		@media #{$sm_device}{ 
 	        padding-left:40px;
 	        padding-right:40px;   
 		    @media #{$md_device}{ 
@@ -176,7 +176,7 @@
 .accourdion-item.mb-40{
 	margin-bottom: 27px; 
 } 
-@media #{$lg_device}{ 
+@media #{$sm_device}{ 
 	.footer-accourdion-wrap{ 
 		margin-left: 0;
 		margin-right: 0;

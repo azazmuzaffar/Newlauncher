@@ -3277,7 +3277,7 @@ p .custom-badge-group {
   background: #111828;
 }
 
-@media only screen and (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .footer-area {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
@@ -3303,7 +3303,7 @@ p .custom-badge-group {
   }
 }
 
-@media only screen and (max-width: 991.98px) and (max-width: 767.98px) {
+@media only screen and (max-width: 575.98px) and (max-width: 767.98px) {
   .footer-area .container .main-row .footer-info-wrapper {
     padding-left: 16px;
     padding-right: 16px;
@@ -3383,7 +3383,7 @@ p .custom-badge-group {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .footer-item .footer-title {
     position: relative;
     cursor: pointer;
@@ -3408,20 +3408,20 @@ p .custom-badge-group {
   }
 }
 
-@media only screen and (max-width: 991.98px) and (max-width: 767.98px) {
+@media only screen and (max-width: 575.98px) and (max-width: 767.98px) {
   .footer-item .footer-title::before {
     right: 20px;
   }
 }
 
-@media only screen and (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .footer-item .footer-title.active::before {
     -webkit-transform: scaleY(-1);
             transform: scaleY(-1);
   }
 }
 
-@media only screen and (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .footer-item .footer-link ul {
     padding-top: 0px;
     padding-bottom: 6px;
@@ -3432,7 +3432,7 @@ p .custom-badge-group {
   margin-bottom: 12px;
 }
 
-@media only screen and (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .footer-item .footer-link ul li {
     margin-bottom: 15px;
   }
@@ -3461,14 +3461,14 @@ p .custom-badge-group {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .footer-item .footer-link, .footer-item .footer-title {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 
-@media only screen and (max-width: 991.98px) and (max-width: 767.98px) {
+@media only screen and (max-width: 575.98px) and (max-width: 767.98px) {
   .footer-item .footer-link, .footer-item .footer-title {
     padding-left: 16px;
     padding-right: 16px;
@@ -3479,7 +3479,7 @@ p .custom-badge-group {
   margin-bottom: 27px;
 }
 
-@media only screen and (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .footer-accourdion-wrap {
     margin-left: 0;
     margin-right: 0;
