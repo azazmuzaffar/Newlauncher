@@ -1986,6 +1986,13 @@ p .custom-badge-group {
   margin-bottom: 7px;
 }
 
+@media (max-width: 575.98px) {
+  .social-proof-wrap .mobile-logos {
+    max-width: 360px;
+    margin: 0 auto !important;
+  }
+}
+
 .hero-area {
   padding-top: 80px;
   padding-bottom: 80px;

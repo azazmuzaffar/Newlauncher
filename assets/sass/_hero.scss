@@ -51,7 +51,12 @@
 	.brand.mb-7{ 
 		margin-bottom: 7px;
 	}
-	
+	.mobile-logos{
+		@media #{$sm_device}{
+	        max-width: 360px;
+			margin: 0 auto !important;
+	    } 
+	}
 }  
 .hero-area{
 	padding-top: 80px;
