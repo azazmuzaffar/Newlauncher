@@ -274,7 +274,7 @@ function reLoadSwiper() {
 
   // FOOTER SCRIPTS
   $('.footer-accourdion-wrap .footer-title').click(function(j) {
-      if($(window).innerWidth() < 991){
+      if($(window).innerWidth() < 576){
         console.log("Right");
           var dropDown = $(this).closest('.accourdion-item').find('.ac-body');
 
@@ -293,9 +293,12 @@ function reLoadSwiper() {
       }
   });
   $(window).on('resize', function() {
-    if($(window).innerWidth() > 991){
-      $('.footer-accourdion-wrap').find('.ac-body').css('display', '');
+    if($(window).innerWidth() > 576){
+      $('.footer-accourdion-wrap').find('.ac-body').css('display', 'block');
     } 
+    else{
+      $('.footer-accourdion-wrap').find('.ac-body').css('display', 'none');
+    }
   });
 
 
